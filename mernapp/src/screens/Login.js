@@ -5,7 +5,7 @@ export default function Login() {
   let navigate = useNavigate()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://taste-hunt-2020.vercel.app/api/loginuser", {
+    const response = await fetch("https://localhost:5000/api/loginuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
