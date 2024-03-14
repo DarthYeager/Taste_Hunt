@@ -4,7 +4,7 @@ export default function Signup() {
     const [credentials, setcredentials] = useState({name: "", location: "", email: "", password: ""})
     const handleSubmit = async(e)=>{
         e.preventDefault();
-        const response = await fetch("https://taste-hunt-2020.vercel.app/api/createuser", {
+        const response = await fetch("https://localhost:5000/api/createuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
