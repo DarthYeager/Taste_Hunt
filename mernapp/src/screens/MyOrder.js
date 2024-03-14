@@ -5,7 +5,7 @@ export default function MyOrder() {
     const [orderData, setOrderData] = useState("");
     const fetchMyOrder = async()=>{
         console.log(localStorage.getItem('userEmail'))
-        await fetch("https://localhost:5000/api/myOrderData",{
+        await fetch("https://taste-hunt-2020.vercel.app/myOrderData",{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
