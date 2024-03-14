@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+//const port = 5000
 const mongoDB = require("./db")
 mongoDB();
 app.use((req,res,next)=>{
@@ -18,6 +18,6 @@ app.use('/api', require("./Routes/OrderData"));
 app.get('/', (req, res)=>{
     res.send('Hello World!')
 })
-app.listen(port, ()=>{
-    console.log(`on port $(port)!!!`)
-})
+//app.listen(port, ()=>{
+    //console.log(`on port $(port)!!!`)
+//})
