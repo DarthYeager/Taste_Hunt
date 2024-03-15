@@ -2,4 +2,6 @@
   "dependencies": {
     "react-router-dom": "^6.16.0"
   }
+  "scripts": {
+    "dev": "gatsby develop -p $PORT"
 }
