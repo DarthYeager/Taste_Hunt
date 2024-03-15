@@ -13,7 +13,7 @@ export default function Cart(){
     }
     const handleCheckOut = async()=>{
         let userEmail = localStorage.getItem("userEmail");
-        let response = await fetch("https://taste-hunt-33.vercel.app/orderData",{
+        let response = await fetch("https://my-app-name.vercel.com/api/orderData"),{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
