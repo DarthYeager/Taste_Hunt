@@ -8,7 +8,7 @@ export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
   const loadData = async () => {
-    let response = await fetch("https://taste-hunt-2020.vercel.app/foodData", {
+    let response = await fetch("https://taste-hunt.vercel.app.5000/api/foodData", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
